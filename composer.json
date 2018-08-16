@@ -13,7 +13,8 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "yozh/yii2-crud-v1": "@dev"
+    "yozh/yii2-crud-v1": "@dev",
+    "mdmsoft/yii2-admin": "~2.0",
   },
   "extra": {
     "_bootstrap": "yozh\\profile\\Bootstrap"

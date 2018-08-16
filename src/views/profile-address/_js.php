@@ -3,6 +3,8 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 
+// <?php $this->registerJs( $this->render('_js.php', ['section' => 'onload']), $this::POS_END ); ?>
+
 ?>
 <?php if( $printTags ?? false ) : ?>
 <script type='text/javascript'><?php endif; ?>
@@ -19,20 +21,7 @@ use yii\helpers\Url;
 		
 	} );
 	
-	<? break; case 'load nested' : ?>
-	
-	$( function () {
-		
-		$( '#nested-profile-address' ).load( '<?= Url::to( [
-			'profile-address/index',
-			\yozh\crud\controllers\DefaultController::PARAM_NESTED => true,
-			$ProfileAddress->formName() => $ProfileAddress->getAttributes(),
-		] ) ?>' );
-		
-	} );
-
-
-    <?php break; case 'template' : ?>
+	<?php break; case 'template' : ?>
 	
 	<?php break; default: ?>
 	
