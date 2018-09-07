@@ -9,7 +9,7 @@
 
 use yozh\base\components\db\Migration;
 use yozh\base\components\db\Schema;
-use yozh\base\components\utils\ArrayHelper;
+use yozh\base\components\helpers\ArrayHelper;
 
 class m000000_000002_yozh_profile_address_table_dev extends Migration
 {

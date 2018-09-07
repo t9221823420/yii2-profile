@@ -9,7 +9,7 @@
 
 use yozh\base\components\db\Migration;
 use yozh\base\components\db\Schema;
-use yozh\base\components\utils\ArrayHelper;
+use yozh\base\components\helpers\ArrayHelper;
 use yozh\profile\models\Profile;
 
 class m000000_000001_yozh_profile_table_dev extends Migration
