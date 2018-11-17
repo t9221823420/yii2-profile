@@ -10,7 +10,7 @@ namespace yozh\profile\models;
 
 use Yii;
 use yozh\address\models\Address;
-use yozh\crud\models\BaseModel as ActiveRecord;
+use yozh\crud\models\BaseActiveRecord as ActiveRecord;
 
 class ProfileAddress extends ActiveRecord
 {
