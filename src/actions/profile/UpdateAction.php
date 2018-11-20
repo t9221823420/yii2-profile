@@ -12,7 +12,7 @@ use yozh\helpdesk\models\HelpdeskAccount;
 use yozh\profile\models\ProfileAddress;
 use yozh\ysell\models\AccountRuleSearch;
 use yozh\ysell\models\vat\CountryVatRuleSearch;
-use yozh\ysell\models\firm\FirmCountrySearch;
+use yozh\ysell\models\firm\FirmCountryAccountSearch;
 use yozh\base\models\BaseActiveRecord as ActiveRecord;
 use yozh\ysell\models\SaleschannelHelpdeskLinkSearch;
 
