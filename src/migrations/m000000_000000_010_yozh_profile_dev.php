@@ -12,9 +12,17 @@ use yozh\base\components\db\Schema;
 use yozh\base\components\helpers\ArrayHelper;
 use yozh\profile\models\Profile;
 
-class m000000_000001_yozh_profile_table_dev extends Migration
+class m000000_000000_010_yozh_profile_dev extends Migration
 {
-	protected static $_table = '{{%yozh_profile}}';
+	protected static $_table;
+	
+	public function __construct( array $config = [] ) {
+		
+		static::$_table = static::$_table ?? Profile::getRawTableName();
+		
+		parent::__construct( $config );
+		
+	}
 	
 	public function safeUp( $params = [] )
 	{

@@ -10,11 +10,19 @@
 use yozh\base\components\db\Migration;
 use yozh\base\components\db\Schema;
 use yozh\base\components\helpers\ArrayHelper;
+use yozh\profile\models\ProfileAddress;
 
-class m000000_000002_yozh_profile_address_table_dev extends Migration
+class m000000_000000_020_yozh_profile_address_dev extends Migration
 {
-
-	protected static $_table = '{{%yozh_profile_address}}';
+	protected static $_table;
+	
+	public function __construct( array $config = [] ) {
+		
+		static::$_table = static::$_table ?? ProfileAddress::getRawTableName();
+		
+		parent::__construct( $config );
+		
+	}
 	
 	public function safeUp( $params = [] )
 	{
