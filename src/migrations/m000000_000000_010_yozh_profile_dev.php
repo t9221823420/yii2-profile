@@ -27,9 +27,7 @@ class m000000_000000_010_yozh_profile_dev extends Migration
 	public function safeUp( $params = [] )
 	{
 		
-		parent::safeUp([
-			'mode' => 1 ? static::ALTER_MODE_UPDATE : static::ALTER_MODE_IGNORE,
-		]);
+		parent::safeUp( $params);
 		
 	}
 	
