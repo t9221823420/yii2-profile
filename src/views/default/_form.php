@@ -21,7 +21,9 @@ $attributes = $Model->attributes;
 		<?php $form = ActiveForm::begin(); ?>
 		
 		<?php $fields = $form->fields( $Model
-			, $Model->attributesEditList()
+			, $Model instanceof \yozh\form\interfaces\AttributeActionListInterface
+				? $Model->attributesEditList()
+				: $Model->attributes()
 		//, [ 'print' => false, ]
 		);
 		
